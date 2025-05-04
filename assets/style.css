@@ -6,6 +6,18 @@ body {
   font-family: "Inter";
   font-style: normal;
 }
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
 .top-header {
   background-color: white;
   position: sticky;
@@ -84,7 +96,7 @@ body {
   font-style: italic;
   width: 60%;
 }
-#about-me p {
+.about-me__main {
   width: 80%;
   font-size: 14px;
 }
@@ -92,7 +104,8 @@ body {
 #gallery {
   /*	min-height: 100vh; */
 }
-.title {
+#gallery header,
+#services header {
   text-align: center;
   padding-block: 2em;
 }
@@ -160,6 +173,7 @@ body {
   background-color: #a8d5d8;
   position: relative;
 }
+
 #services .container::before {
   content: " ";
   background-color: #1c6474;
