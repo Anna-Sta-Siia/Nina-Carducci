@@ -7,6 +7,99 @@
       content="Photographe à Bordeaux spécialisée en portrait, mariage et événements. Découvrez mon univers et mes prestations."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Nina Carducci",
+        "image": "https://ninacarducci.github.io/assets/images/nina_carducci.png",
+        "@id": "https://ninacarducci.github.io/",
+        "url": "https://ninacarducci.github.io/",
+        "telephone": "05 56 67 78 89",
+        "priceRange": "€€",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "addressLocality": "Bordeaux",
+          "postalCode": "33200",
+          "addressCountry": "FR"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "10:00",
+            "closes": "19:00"
+          }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Mes services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Shooting photo",
+                "description": "Capturer vos moments les plus précieux en Île-de-France",
+                "price": "350",
+                "priceCurrency": "EUR"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Retouches",
+                "description": "Retouches professionnelles pour vos publications",
+                "price": "50",
+                "priceCurrency": "EUR"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Album photos",
+                "description": "Album personnalisé A4, 30 pages recto/verso",
+                "price": "400",
+                "priceCurrency": "EUR"
+              }
+            }
+          ]
+        }
+      }
+    </script>
+    <!-- Balises Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Nina Carducci - Photographe professionnelle à Bordeaux" />
+    <meta
+      property="og:description"
+      content="Photographe à Bordeaux spécialisée en portrait, mariage et événements. Découvrez mon univers et mes prestations."
+    />
+    <meta property="og:url" content="https://ninacarducci.github.io/" />
+    <meta
+      property="og:image"
+      content="https://ninacarducci.github.io/assets/images/nina_carducci.png"
+    />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="Nina Carducci" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nina Carducci - Photographe à Bordeaux" />
+    <meta
+      name="twitter:description"
+      content="Photographe professionnelle spécialisée en portrait, mariage et événements."
+    />
+    <meta
+      name="twitter:image"
+      content="https://ninacarducci.github.io/assets/images/nina_carducci.png"
+    />
+    <meta name="twitter:url" content="https://ninacarducci.github.io/" />
+    <meta name="twitter:site" content="@ninacarducci" />
+    <!-- Modifie si tu as un compte -->
+
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css?v=1" />
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,11 +108,27 @@
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
       rel="stylesheet"
     />
-    <meta charset="UTF-8" />
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js?v=1" defer></script>
     <script src="./assets/bootstrap/bootstrap.bundle.min.js?v=1" defer></script>
     <script src="./assets/maugallery.js?v=1" defer></script>
     <script src="./assets/scripts.min.js?v=1" defer></script>
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/slider/ryoji_iwata_photographe-portrait-entreprise.jpg"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/slider/nicholas-green_photographe-evenementiel-bordeaux.jpg"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/slider/edward_cisneros_photographe-mariage-bordeaux.jpg"
+    />
+    <link rel="preload" as="image" href="./assets/images/nina_carducci.png" />
   </head>
   <body>
     <header class="top-header">
@@ -44,7 +153,6 @@
       </nav>
     </header>
     <div id="header">
-      
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button
@@ -121,44 +229,44 @@
         </button>
       </div>
     </div>
-    </div>
     <main>
       <section id="about">
         <header>
           <h2 class="sr-only">À propos</h2>
         </header>
         <div class="picture left">
-          <img src="./assets/images/nina_carducci.png" alt="Portrait de Nina Carducci"/>
+          <img src="./assets/images/nina_carducci.png" alt="Portrait de Nina Carducci" />
         </div>
         <div id="about-me">
           <h3 class="about-me__title">A propos de moi</h3>
           <p class="about-me__introduction">
-            Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un
-            moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà
-            ce qui me fait vibrer.
-            </p>
-            <p class="about-me__main">
-             Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons
-             qu’une envie : le figer au travers de photographies pour le savourer avec les personnes
-             qui sont importantes à nos yeux, ou le partager au plus grand nombre. C’est ce que je vous
-             propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma
-             technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du
-             bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos
-             photos.
-            </p>
+            Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir
+            un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels,
+            voilà ce qui me fait vibrer.
+          </p>
+          <p class="about-me__main">
+            Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons
+            qu’une envie : le figer au travers de photographies pour le savourer avec les personnes
+            qui sont importantes à nos yeux, ou le partager au plus grand nombre. C’est ce que je
+            vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma
+            technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du
+            bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos
+            photos.
+          </p>
         </div>
       </section>
 
       <section id="gallery">
         <header>
-          <h2 >Portfolio</h2>
+          <h2>Portfolio</h2>
         </header>
         <div class="container py-3">
           <div class="gallery" style="display: none">
             <img
               src="./assets/images/gallery/concerts/scene_concert_aaron_paul_projecteurs_rouges.jpg"
               srcset="
-                ./assets/images/gallery/concerts/scene_concert_aaron_paul_projecteurs_rouges.webp 1x"
+                ./assets/images/gallery/concerts/scene_concert_aaron_paul_projecteurs_rouges.webp 1x
+              "
               alt="Scène de concert éclairée de rouge avec foule en contrebas"
               loading="lazy"
               width="432"
@@ -280,9 +388,12 @@
           </div>
         </div>
         <blockquote class="quote">
-          <p class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion.
-             L’inexactitude n’existe pas en photographie.
-              Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</p>
+          <p class="quote__text">
+            Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est
+            traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude
+            n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la
+            vérité.
+          </p>
           <footer class="quote__author">– Richard Avedon</footer>
         </blockquote>
       </section>
@@ -294,36 +405,42 @@
         <div class="container">
           <article class="service">
             <div class="service__description">
-            <h3>Shooting photo</h3>
-            <p> Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me
-              déplace en Île-de-France pour réaliser vos photos</p>
+              <h3>Shooting photo</h3>
+              <p>
+                Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je
+                me déplace en Île-de-France pour réaliser vos photos
+              </p>
             </div>
             <div class="service__price">
               <h4>350€/demi journée</h4>
               <span>Matériel, déplacement inclus</span>
-          </div>
+            </div>
           </article>
           <article class="service">
             <div class="service__description">
-            <h3>Retouches</h3>
-            <p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un
-              rendu optimal pour vos publications</p>
+              <h3>Retouches</h3>
+              <p>
+                Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un
+                rendu optimal pour vos publications
+              </p>
             </div>
             <div class="service__price">
               <h4>50€/photo</h4>
               <span>2 AR par photo</span>
-          </div>
+            </div>
           </article>
           <article class="service">
             <div class="service__description">
-            <h3>Album photos</h3>
-            <p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à
-              travers un album photo personnalisé</p>
+              <h3>Album photos</h3>
+              <p>
+                Partagez avec vos proches et vos clients les photos des moments partagés ensemble à
+                travers un album photo personnalisé
+              </p>
             </div>
             <div class="service__price">
               <h4>400€ album A4</h4>
               <span>30 pages recto/verso</span>
-          </div>
+            </div>
           </article>
         </div>
       </section>
