@@ -402,13 +402,13 @@ input[type="submit"] {
   height: 14px;
   border-radius: 50%;
   background-color: black; /* gris très clair pour mieux ressortir sur noir */
-  border: 4px solid #ff7a1a; /* contour gris clair plus doux que noir */
+  border: 4px solid #7a3100; /* contour gris clair plus doux que noir */
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.6); /* halo subtil pour lisibilité */
   transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
 }
 
 .carousel-indicators .active {
-  background-color: #ff7a1a; /* orange vif */
+  background-color: #7a3100; /* orange vif */
   border: 4px solid #000; /* bien net */
   transform: scale(1.3);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.8); /* ombre plus forte pour le focus */
