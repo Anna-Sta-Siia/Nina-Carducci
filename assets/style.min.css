@@ -391,35 +391,48 @@ input[type="submit"] {
   mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 8 8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.5 0L4.09 1.41 6.67 4 4.09 6.59 5.5 8l4-4z' fill='%23fff'/%3E%3C/svg%3E");
 }
 .carousel-indicators {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  justify-content: center;
-  gap: 10px;
-  bottom: 20px;
-  left: 30%;
-  right: 0;
-  width: 8%;
-  padding: 10px 15px;
-  background-color: orange;
+  gap: 6px; /* moins d’espace entre bulles */
+  background-color: rgba(255, 165, 0, 0.85); /* orange clair, discret */
   border-radius: 10px;
   z-index: 10;
+  width: 10%;
+  margin: 0;
 }
 
 .carousel-indicators [data-bs-target] {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background-color: #333; /* Couleur sombre (contraste élevé) */
-  border: 2px solid #fff; /* Bord blanc pour démarcation nette */
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
-  transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+  position: relative;
+  width: 36px; /* zone cliquable OK */
+  height: 36px;
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.carousel-indicators .active {
-  background-color: #10626d; /* Couleur vive et accessible */
+.carousel-indicators [data-bs-target]::before {
+  content: "";
+  display: block;
+  width: 18px; /* taille visible des bulles */
+  height: 18px;
+  border-radius: 50%;
+  background-color: #333;
   border: 2px solid #fff;
-  transform: scale(1.4);
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s, background-color 0.2s;
 }
+
+.carousel-indicators .active::before {
+  background-color: #10626d;
+  transform: scale(1.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
 .form-submit {
   justify-content: center;
   margin-top: 2em;
