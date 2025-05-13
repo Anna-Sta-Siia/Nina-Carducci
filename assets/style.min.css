@@ -395,9 +395,9 @@ input[type="submit"] {
   justify-content: center;
   gap: 10px;
   bottom: 20px;
-  left: 0;
+  left: 30%;
   right: 0;
-  width: auto;
+  width: 8%;
   padding: 10px 15px;
   background-color: orange;
   border-radius: 10px;
@@ -415,7 +415,7 @@ input[type="submit"] {
 }
 
 .carousel-indicators .active {
-  background-color: #0055ff; /* Couleur vive et accessible */
+  background-color: #10626d; /* Couleur vive et accessible */
   border: 2px solid #fff;
   transform: scale(1.4);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
