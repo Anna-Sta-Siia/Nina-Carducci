@@ -424,7 +424,7 @@ input[type="submit"] {
   z-index: 10;
   width: 10%;
   left: 30%;
-  background-color: transparent; /* ou enlever complètement */
+  background-color: orange;
 }
 
 .carousel-indicators [data-bs-target] {
