@@ -392,10 +392,13 @@ input[type="submit"] {
 }
 .carousel-indicators {
   gap: 8px;
-  position: absolute;
   bottom: 15px;
   z-index: 10;
+  background-color: grey;
+  width: 10%;
+  left: 30%;
 }
+
 .carousel-indicators [data-bs-target] {
   width: 14px;
   height: 14px;
