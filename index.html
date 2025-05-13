@@ -10,71 +10,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
     <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": ["LocalBusiness", "Photographer"],
+        "name": "Nina Carducci",
+        "image": "https://ninacarducci.github.io/assets/images/nina_carducci.png",
+        "@id": "https://ninacarducci.github.io/",
+        "url": "https://ninacarducci.github.io/",
+        "telephone": "05 56 67 78 89",
+        "priceRange": "€€",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "addressLocality": "Bordeaux",
+          "postalCode": "33200",
+          "addressCountry": "FR"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "10:00",
+            "closes": "19:00"
+          }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Mes services",
+          "itemListElement": [
             {
-              "@context": "https://schema.org",
-              "@type": ["LocalBusiness", "Photographer"],
-              "name": "Nina Carducci",
-              "image": "https://ninacarducci.github.io/assets/images/nina_carducci.png",
-              "@id": "https://ninacarducci.github.io/",
-              "url": "https://ninacarducci.github.io/",
-              "telephone": "05 56 67 78 89",
-              "priceRange": "€€",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "68 avenue Alsace-Lorraine",
-                "addressLocality": "Bordeaux",
-                "postalCode": "33200",
-                "addressCountry": "FR"
-              },
-              "openingHoursSpecification": [
-                {
-                  "@type": "OpeningHoursSpecification",
-                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                  "opens": "10:00",
-                  "closes": "19:00"
-                }
-              ],
-              "hasOfferCatalog": {
-                "@type": "OfferCatalog",
-                "name": "Mes services",
-                "itemListElement": [
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Shooting photo",
-                      "description": "Capturer vos moments les plus précieux en Île-de-France",
-                      "price": "350",
-                      "priceCurrency": "EUR"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Retouches",
-                      "description": "Retouches professionnelles pour vos publications",
-                      "price": "50",
-                      "priceCurrency": "EUR"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Album photos",
-                      "description": "Album personnalisé A4, 30 pages recto/verso",
-                      "price": "400",
-                      "priceCurrency": "EUR"
-                    }
-                  }
-                ]
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Shooting photo",
+                "description": "Capturer vos moments les plus précieux en Île-de-France",
+                "price": "350",
+                "priceCurrency": "EUR"
               }
-              "sameAs": [
-        "https://www.instagram.com/ninacarducci.photo/"
-      ]
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Retouches",
+                "description": "Retouches professionnelles pour vos publications",
+                "price": "50",
+                "priceCurrency": "EUR"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Album photos",
+                "description": "Album personnalisé A4, 30 pages recto/verso",
+                "price": "400",
+                "priceCurrency": "EUR"
+              }
             }
+          ]
+        },
+        "sameAs": ["https://www.instagram.com/ninacarducci.photo/"]
+      }
     </script>
+
     <!-- Balises Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Nina Carducci - Photographe professionnelle à Bordeaux" />
