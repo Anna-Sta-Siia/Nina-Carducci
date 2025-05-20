@@ -363,20 +363,25 @@ input[type="submit"] {
   background-color: #8a5a2b;
   border-radius: 0;
 }
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.8); /* bon fond sombre */
+  background-color: #10626d;
   border-radius: 50%;
   width: 48px;
   height: 48px;
-  background-size: 60% 60%; /* pour éviter que la flèche touche les bords */
+  background-size: 60% 60%;
   background-repeat: no-repeat;
   background-position: center;
-  filter: invert(1); /* rend la flèche blanche */
+  mask-image: none; /* pour s'assurer que l’icône SVG ne masque pas les couleurs */
+  -webkit-mask-image: none;
+  filter: none;
 }
+
+
+
 
 
 .carousel-indicators {
