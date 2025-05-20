@@ -282,7 +282,7 @@ input[type="submit"] {
 .carousel-control-next,
 .carousel-control-prev {
   opacity: 0.8;
-  color: transparent;
+  color: black;
 }
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
