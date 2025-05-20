@@ -276,9 +276,13 @@ input[type="submit"] {
   background-color: #8a5a2b;
   border-radius: 0;
 }
+.carousel-item img {
+  height: auto;
+}
 .carousel-control-next,
 .carousel-control-prev {
   opacity: 0.8;
+  color: transparent;
 }
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
