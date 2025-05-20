@@ -313,7 +313,7 @@ input[type="submit"] {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background-color: #333;
+  background-color: #fd7e14;
   border: 2px solid #fff;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
   transition: transform 0.2s, background-color 0.2s;
