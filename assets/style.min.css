@@ -368,11 +368,16 @@ input[type="submit"] {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.8); /* plus sombre pour contraste renforcé */
+  background-color: rgba(0, 0, 0, 0.8); /* bon fond sombre */
   border-radius: 50%;
   width: 48px;
   height: 48px;
+  background-size: 60% 60%; /* pour éviter que la flèche touche les bords */
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: invert(1); /* rend la flèche blanche */
 }
+
 
 .carousel-indicators {
   position: absolute;
@@ -414,36 +419,4 @@ input[type="submit"] {
   background-color: #10626d;
   transform: scale(1.3);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
-}
-
-.form-submit {
-  justify-content: center;
-  margin-top: 2em;
-  width: 100%;
-}
-.btn-camera {
-  background-color: #a8d5d8;
-  border: none;
-  border-radius: 40px;
-  padding: 1em 2.5em;
-  font-size: 18px;
-  color: #0d3d40;
-  font-weight: 700;
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-.btn-camera i {
-  font-size: 20px;
-}
-.btn-camera:hover {
-  background-color: #91c7ca;
-  transform: translateY(-2px);
-}
-.btn-camera:focus-visible {
-  outline: #10626d solid 3px;
-  outline-offset: 4px;
 }
